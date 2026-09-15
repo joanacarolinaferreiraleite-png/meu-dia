@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#3157d5">
+
+  <title>Meu Dia</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="aplicativo">
+    <header class="cabecalho">
+      <div>
+        <p class="saudacao">Olá, Joana!</p>
+        <h1>Meu Dia</h1>
+      </div>
+
+      <div class="icone-data">📅</div>
+    </header>
+
+    <section class="cartao-resumo">
+      <p id="data-atual">Carregando data...</p>
+      <h2 id="mensagem-dia">Veja sua programação de hoje</h2>
+
+      <div class="progresso">
+        <div id="barra-progresso"></div>
+      </div>
+
+      <p id="texto-progresso">0 atividades concluídas</p>
+    </section>
+
+    <section>
+      <div class="titulo-secao">
+        <h2>Compromissos</h2>
+        <span id="quantidade-compromissos">0</span>
+      </div>
+
+      <div id="lista-compromissos" class="lista"></div>
+    </section>
+
+    <section>
+      <div class="titulo-secao">
+        <h2>Pendências</h2>
+        <span id="quantidade-pendencias">0</span>
+      </div>
+
+      <div id="lista-pendencias" class="lista"></div>
+    </section>
+
+   <nav class="menu-inferior">
+  <button class="menu-ativo" data-tela="hoje">
+    <span>☀️</span>
+    Hoje
+  </button>
+
+  <button data-tela="semana">
+    <span>📆</span>
+    Semana
+  </button>
+
+  <button data-tela="pendencias">
+    <span>✅</span>
+    Pendências
+  </button>
+</nav>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
